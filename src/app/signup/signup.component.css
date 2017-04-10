@@ -1,0 +1,54 @@
+
+
+.formWrapper{
+  width:100%;
+}
+.formWrapper h1{
+  width:90%;
+  background-color: #1a81d8;
+  color: white;
+  font-size:28px;
+  padding:15px;
+  margin-top: 40px;
+  margin-bottom:40px;
+}
+.formWrapper table{
+  width:80%;
+  padding:12px;
+}
+.formWrapper table td{
+  width:50%;
+  padding:12px;
+}
+.row{
+  width:100%;
+  margin:10px;
+
+}
+.labelcol{
+  width:30%;
+}
+.inputcol{
+  width:70%;
+}
+
+input[type=text], input[type=password], input[type=datetime], input[type=tel]{
+width:90%;
+}
+
+input[type=radio]{
+  margin-right:15px;
+}
+
+.Btn {
+  width: 50%;
+  font-size: 18px;
+  background-color: #3e474f;
+  color: white;
+  margin-top:20px;
+}
+
+.errorMsg{
+  width:100%;
+}
+

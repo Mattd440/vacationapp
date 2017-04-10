@@ -1,0 +1,49 @@
+img{
+  width:100%;
+  margin-top:35px;
+  z-index:-1;
+}
+.mainTitle{
+  font-size:68px;
+  color: #1a81d8;
+  font-family: Calibri, Arial;
+  font-weight: 700;
+  margin-left:100px;
+  margin-top:-150px;
+
+}
+#showDestinations{
+  float:right;
+  position: relative;
+  width:40%;
+  font-size:18px;
+  font-weight:bolder;
+}
+#showDestinations:hover{
+background-color: #e6d82b;
+}
+
+.showList {
+  display: none;
+}
+
+.listdest{
+  margin-top:30px;
+  font-size:26px;
+  font-weight: bolder;
+  background-color: orangered;
+  width:100%;
+  float:right;
+  margin-left:200px;
+  text-align: right;
+}
+.listdest img{
+  float:left;
+  width:40%;
+  margin:16px;
+}
+.listdest ul{
+  list-style-type: none;
+  margin:12px;
+}
+

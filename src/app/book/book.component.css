@@ -1,0 +1,47 @@
+.bookingContent{
+  margin:10px;
+  text-align: center;
+
+}
+h1{
+  margin-top:30px;
+  background-color: rgba(97,124,249,0.81);
+  padding:10px;
+  width:100%;
+  margin-bottom:20px;
+  text-shadow: 4px 4px 3px #FFFFFF;
+}
+
+table{
+  width:80%;
+  border-collapse: collapse;
+  overflow-x: auto;
+  margin-bottom:10px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, .5);
+}
+table  th, td{
+  border: 1px solid black;
+
+}
+th{
+height:75px;
+  text-align: center;
+  font-size:28px;
+  font-weight:bolder;
+  text-decoration: underline ;
+  vertical-align: middle;
+  padding:5px;
+}
+td{
+  height:40px;
+  text-align:center;
+  font-size:18px;
+  padding:10px;
+}
+
+tr:nth-child(even){
+background-color: rgba(226,227,225,0.81);
+}
+tr:hover{
+  background-color: rgba(225,249,9,0.81);
+}

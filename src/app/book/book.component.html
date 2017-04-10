@@ -1,0 +1,33 @@
+
+<div class="bookingContent">
+<h1> Dream Cruise GetAways!</h1>
+<table class="cruiseTable" align="center">
+  <tr>
+    <th>Cruise Line</th>
+    <th>Destination</th>
+    <th> Price</th>
+  </tr>
+  <tr *ngFor="let cruise of cruises">
+    <td><a href={{cruise.url}}>{{cruise.CruiseLine}}</a></td>
+    <td>{{cruise.Destination}}</td>
+    <td>{{cruise.Price || currency }}</td>
+
+  </tr>
+</table>
+
+
+
+<h1> Dream Resort Get Aways</h1>
+<table class="resortTable" align="center">
+  <tr>
+    <th>Resort </th>
+    <th>Location </th>
+    <th>Price </th>
+  </tr>
+  <tr *ngFor="let resort of resorts">
+    <td><a href={{resort.url}}>{{resort.name}}</a></td>
+    <td>{{resort.location}}</td>
+    <td>{{resort.price || currency }}</td>
+  </tr>
+</table>
+</div>

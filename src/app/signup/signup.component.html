@@ -1,0 +1,150 @@
+
+<div class="formWrapper" align="center">
+
+  <h1> Sign Up Today! </h1>
+<form action="http://et791.ni.utoledo.edu/~mdieder2/cgi-bin/confirmuser.py" method="POST"  #userform="ngForm" (ngSubmit)="userform.submit()" >
+  <span id="test"> </span>
+
+  <table>
+    <tr class="row">
+      <td class="labelcol"><label for="firstNameText">First Name:</label></td>
+      <td class="inputcol">
+        <input [(ngModel)]="model.fName"  class="form-control"type="text" id="firstNameText" name="fName" required minlength="2" maxlength="35" #fName="ngModel">
+        <div *ngIf="fName.errors && (fName.dirty || fName.touched)"
+             class="alert alert-danger" >
+          <div [hidden]="!fName.errors.required" class="errorMsg"style="z-index: 150">
+            First Name is required
+          </div>
+          <div [hidden]="!fName.errors.minlength" class="errorMsg">
+            First Name must be at least 2 characters long.
+          </div>
+          <div [hidden]="!fName.errors.maxlength" class="errorMsg">
+            First Name cannot be more than 35 characters long.
+          </div>
+
+        </div>
+      </td>
+    </tr>
+
+
+
+    <tr class="row">
+      <td class="labelcol"><label for="lastNameText">Last Name: </label> </td>
+      <td class="inputcol">
+        <input [(ngModel)]="model.lName" class="form-control" type="text" id="lastNameText" name="lName" required minlength="2" maxlength="35" #lName="ngModel">
+        <div *ngIf="lName.errors && (lName.dirty || lName.touched)"
+             class="alert alert-danger" >
+          <div [hidden]="!lName.errors.required" style="width:80%">
+            Last Name is required
+          </div>
+          <div [hidden]="!lName.errors.minlength">
+            Last Name must be at least 2 characters long.
+          </div>
+          <div [hidden]="!lName.errors.maxlength">
+            Last Name cannot be more than 35 characters long.
+          </div>
+        </div>
+      </td>
+    </tr>
+
+    <tr class="row">
+      <td class="labelcol"><label for="passwordText">Password: </label> </td>
+      <td class="inputcol"> <input [(ngModel)]="model.password" type="password" id="passwordText" name="password"required minlength="8" maxlength="35" #password="ngModel">
+        <div *ngIf="password.errors && (password.dirty || password.touched)"
+             class="alert alert-danger" >
+          <div [hidden]="!password.errors.required">
+            Password is required
+          </div>
+          <div [hidden]="!password.errors.minlength">
+            Password must be at least 8 characters long.
+          </div>
+          <div [hidden]="!password.errors.maxlength">
+            Password cannot be more than 35 characters long.
+          </div>
+        </div>
+
+      </td>
+    </tr>
+    <tr class="row">
+      <td class="labelcol"><label (onblur)="confirmPasswordMatch();"  for="confirmPassword">Confirm Password: </label> </td>
+      <td class="inputcol">
+        <input type="password" [(ngModel)]="model.password2" id="confirmPassword"  name="password2"required minlength="8" maxlength="35" #password2="ngModel">
+        <div *ngIf="password2.errors && (password2.dirty || password2.touched)"
+             class="alert alert-danger" >
+          <div [hidden]="!password2.errors.required" >
+            Password is required
+          </div>
+          <div [hidden]="!password2.errors.minlength">
+            Password must be at least 8 characters long.
+          </div>
+          <div [hidden]="!password2.errors.maxlength">
+            Password cannot be more than 35 characters long.
+          </div>
+          <div [hidden]="password != password2">
+            Password cannot be more than 35 characters long.
+          </div>
+        </div>
+      </td>
+    </tr>
+    <tr class="row">
+      <td class="labelcol"><label for="birthDate">Birthday:  </label></td>
+      <td class="inputcol"><input [(ngModel)]="model.birthday" type="datetime" id="birthDate" name="birthDate" required #birthday="ngModel">
+        <div *ngIf="birthday.errors && (birthday.dirty || birthday.touched)"
+             class="alert alert-danger" >
+          <div [hidden]="!birthday.errors.required" >
+           Birthday is required
+          </div>
+        </div>
+      </td>
+    </tr>
+    <tr class="row">
+      <td class="labelcol"><label for="phoneNumber">Phone Number:</label></td>
+      <td class="inputcol"><input  [(ngModel)]="model.phone"type="tel"  id="phoneNumber" name="phoneNumber" required minlength="7" maxlength="15" #phone="ngModel">
+        <div *ngIf="phone.errors && (phone.dirty || phone.touched)"
+             class="alert alert-danger" >
+          <div [hidden]="!phone.errors.required" >
+            Phone Number is required
+          </div>
+          <div [hidden]="!phone.errors.minlength">
+            Phone Number must be at least 7 characters long.
+          </div>
+          <div [hidden]="!phone.errors.maxlength">
+            Phone Number cannot be more than 12 characters long.
+          </div>
+
+        </div>
+
+      </td>
+    </tr>
+    <tr class="row">
+     <td class="labelcol"><label>Gender: </label></td>
+      <td class="inputcol">
+        <fieldset>
+        <label>Male: </label><input type="radio" value="Male" name="gender">
+        <label>Female: </label><input type="radio" value="Female" name="gender"/>
+        </fieldset>
+      </td>
+    </tr>
+    <tr class="row">
+      <td><label for="destinations" > Destinations </label></td>
+      <td class="inputcol">
+        <select id="destinations" name="destinations" id="major" >
+          <option>Bahamas</option>
+          <option>Jamaica</option>
+          <option>Mexico</option>
+          <option>Carribean</option>
+          <option>Unsure</option>
+        </select>
+      </td>
+
+
+    </tr>
+  </table>
+  <button class="Btn" [disabled]="!userform.form.valid" type="submit">Submit</button>
+
+</form>
+
+
+</div>
+
+

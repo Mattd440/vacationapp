@@ -1,0 +1,35 @@
+<aside>
+  <h2 class="sideTitle">Book Your Cruise Today</h2>
+  <form id="destForm">
+    <label for="asideName">Your Name: </label>
+    <input type="text"  [(ngModel)]="bookName" id="asideName" name="sideName" >
+    <label for="asideDest">Interested In:</label>
+    <input  type="text" [(ngModel)]="bookDest" id="asideDest" name="sideDest">
+    <button (click)="updateName()" class="btn btn-warning">Enter</button>
+  </form>
+  <section>
+    <article>
+      <p id="para" #para>
+        Your Dream cruise vacation is adventure on a grand scale. You'll visit incredible destinations
+        you've only dreamed of and have adventures you never imagined. You can go ice-skating
+        in the Caribbean, or sunbathing in Alaska. And best of all, you'll be pampered every step of the way.
+      </p>
+      <br>
+      <img   id="asideimg1" src="../../assets/images/beach1.jpg">
+      <p>
+        From your favorite dishes to a world of new flavors, our restaurants are an adventure
+        plate by plate. Italian, Japanese, Brazilian steakhouse and pizza faves – take your
+        taste buds around the world. Add a beverage package for big (and refreshing) savings.
+      </p>
+      <p>
+        Explorers, adventurers, daredevils and relaxation seekers alike…
+        this vacation is for you! Learn to surf far above the waves,
+        climb higher than ever on the rock wall, and even ice skate your
+        way across the Caribbean — and there’s always time for some
+        relaxation at the spa and pool, or at our many shops onboard.
+      </p>
+    </article>
+
+
+  </section>
+</aside>

@@ -1,0 +1,28 @@
+
+
+<div class="pageWrapper">
+  <div class="weatherSearch">
+<h1> View Weather For Your Destination</h1>
+<label for="city">Enter Your Destination:  </label>
+<input id="city"  type="text" [(ngModel)]="cityName">
+<button  class="btn btn-primary" (click)="getForeCast(cityName)">Get Weather</button>
+  </div>
+<h1 *ngIf="forecast">{{city}} 5-Day ForeCast</h1>
+  <div *ngFor="let day of forecast; let i = index">
+    <div *ngIf="i % 8 == 0" >
+      <div class="weatherWrapper">
+      <h4 class="weatherDate">{{day.dt_txt.slice(5,day.dt_txt.indexOf(' '))}}</h4>
+
+      <h3 class="weatherDescription">{{ day.weather[0].description }}</h3>
+
+      <div class="temps">
+        <h4 class="weatherHighTemp"><span>High: </span> {{day.main.temp_max ||round}}</h4>
+        <h4 class="weatherLowTemp"><span>Low: </span> {{day.main.temp_min || round}}</h4>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+

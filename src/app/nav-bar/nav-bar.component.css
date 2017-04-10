@@ -1,0 +1,105 @@
+/* Nav Bar  */
+
+.nav{
+  height:50px;
+}
+
+.navbar{
+  z-index:2;
+  background-color: #350105;
+
+  position:fixed;
+
+  top:0;
+
+  width: 100%;
+
+  margin:0px;
+
+  padding :3px;
+
+  list-style-type: none;
+
+}
+
+.navbar li{
+
+  float:left;
+
+}
+
+.navbar li a{
+
+  display:block;
+
+  text-align:center;
+
+  color:white;
+  font-weight:bolder;
+  padding:15px;
+font-size: larger;
+  text-decoration:none;
+
+}
+
+.navbar li a:hover{
+
+  background-color: #e6d82b
+
+}
+
+.navbar li.signup{
+
+  float:right;
+
+}
+
+.logo img{
+
+  height:50px;
+
+  width: auto;
+}
+
+
+
+/* Dropdown menu */
+
+.dropdown{
+
+  display:none;
+
+  position: absolute;
+
+  box-shadow: 0px 14px 24px 0px darkslategray;
+
+  min-width: 170px;
+
+}
+
+.dropdown a{
+
+  background-color: #333333;
+
+  color:black;
+
+  border-bottom: 1px solid white;
+
+}
+
+.dropdown a:last-child{
+
+  border-bottom: none;
+
+}
+
+.dropdownMenu:hover .dropdown{
+  display:block;
+
+}
+.dropdown:hover nav {
+  height:50px;
+}
+
+
+

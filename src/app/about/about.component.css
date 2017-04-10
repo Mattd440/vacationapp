@@ -1,0 +1,48 @@
+.aboutWrapper{
+  background-color: rgba(246,244,235,0.81);
+  margin-left:20px;
+}
+
+h1{
+  text-align:center;
+  background-color: coral;
+  padding:12px;
+  margin-bottom:12px;
+}
+.aboutImgBox{
+  width:100%;
+  height:130px;
+  display:inline-block;
+  margin:8px;
+  margin-bottom:16px;
+
+  padding-bottom:10px;
+}
+
+.aboutImgBox img{
+  float:left;
+  width:25%;
+  height:120px;
+  margin-left:12px;
+  margin-right:10px;
+  border-radius: 25% 10% 25% 10%;
+  box-shadow: 3px 3px 5px black;
+
+}
+
+.imgText {
+  text-indent: 10px;
+  text-wrap: normal;
+  float:right;
+  padding:8px;
+  width: 60%;
+  margin-right:8px;
+  margin-top:-10px;
+  font-size:14px;
+  font-family: "Times New Roman", Arial ;
+}
+hr{
+  background-color: darkblue;
+  width:75%;
+  border-bottom: 1px solid darkblue;
+}

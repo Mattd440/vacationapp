@@ -1,0 +1,39 @@
+[
+  {
+    "name": "Le Soleil d'Or",
+    "url" : "http://www.lesoleildor.com/",
+    "location": "Cayman Brac, Cayman Islands ",
+    "price": "$325"
+  },
+  {
+    "name": "Le Sereno ",
+    "url": "http://www.serenohotels.com/en/property/le-sereno/" ,
+    "location": "Anse de Grand, St. Barts ",
+    "price": "$399"
+  },
+  {
+    "name": "Jakes Hotel",
+    "url": "http://www.jakeshotel.com",
+    "location": "Elizabeth, Jamaica",
+    "price": "$275"
+  },
+  {
+    "name": "GoldensEye",
+    "url": "http://www.visitjamaica.com/goldeneye-hotel",
+    "location": "Saint Mary, Jamaica ",
+    "price": "$299"
+  },
+  {
+    "name": "Guana Island",
+    "url": "https://www.jetsetter.com/hotels/guana-island/british-virgin-islands/.../guana-island-resort",
+    "location": " Guana Island, Virgin Islands",
+    "price": "$450"
+  },
+  {
+    "name": "Petit St Vincent Resort",
+    "url":"http://www.petitstvincent.com",
+    "location": " St Vincent, Grenadines",
+    "price": "$380"
+  }
+
+]

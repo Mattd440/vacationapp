@@ -1,0 +1,45 @@
+.pageWrapper{
+  width:100%;
+  margin:20px;
+}
+.weatherSearch{
+  background-color: rgba(247,242,249,0.81);
+  padding:12px;
+  text-align: center;
+}
+.weatherSearch input{
+  margin-right:10px;
+  margin-left:10px;
+}
+h1{
+  align-self: center;
+}
+.weatherWrapper{
+background-color: lightblue;
+  height:100px;
+  line-height: 100px;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top:1px ridge black;
+}
+.weatherWrapper:first-child{
+  margin-top:25px;
+}
+.weatherDate{
+  float:left;
+  margin-left:15px;
+  margin-top:15px;
+}
+ .temps{
+  float:right;
+  margin-right: 15px;
+   margin-top:15px;
+   display:block;
+   padding:0;
+}
+
+
+ .weatherDescription{
+
+ }

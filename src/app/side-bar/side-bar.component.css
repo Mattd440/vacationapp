@@ -1,0 +1,41 @@
+.sideContent{
+  width:30%;
+  word-wrap: normal;
+  text-align: justify;
+  text-justify: inter-word;
+}
+.sideContent p{
+  font-size:18px;
+}
+
+.sideTitle{
+  text-align: center;
+  font-size:40px;
+  background-color: #d8a57a;
+  padding:12px;
+  color: darkslategray;
+}
+
+#asideimg1{
+  width:75%;
+  margin:25px;
+}
+form label{
+  display:inline-block;
+margin:5px;
+}
+form button{
+  margin:5px;
+}
+#asideName{
+  margin-left:10px;
+}
+
+.message{
+  font-size: 20px;
+  background-color:darkblue;
+  color:white;
+  border:1px solid black;
+  border-radius: 2px;
+}
+
